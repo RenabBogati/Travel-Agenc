@@ -1,0 +1,177 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #bfdfe7, #0072ff); /* Original blue gradient */
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    margin: 20px 0;
+}
+
+.logo-container img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #004080;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #e60000c0; /* Bright blood red */
+}
+
+/* Social Links Section */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Box 1 - Website */
+.social-links .box {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #ff6347, #ff4500); /* Tomato to dark orange gradient */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for more depth */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+/* Box 2 - Instagram */
+.social-links .boxx {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f58529, #d62976); /* Instagram-related gradient */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for more depth */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+/* Box 3 - Facebook */
+.social-links .boxxx {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #3b5998, #8b9dc3); /* Facebook Blue gradient */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for more depth */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+/* Box 4 - TikTok */
+.social-links .boxxxx {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #000000, #2f2f2f); /* TikTok-related gradient */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for more depth */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+/* Box 5 - LinkedIn */
+.social-links .boxxxxx {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #0077b5, #005582); /* LinkedIn Blue gradient */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for more depth */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+/* Box 6 - WhatsApp */
+.social-links .boxxxxxx {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #25d366, #128c7e); /* WhatsApp Green gradient */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for more depth */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+/* Box 7 - YouTube */
+.social-links .boxxxxxxx {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #ff0000, #cc0000); /* YouTube Red gradient */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for more depth */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+/* Hover effects for all boxes */
+.social-links .box:hover,
+.social-links .boxx:hover,
+.social-links .boxxx:hover,
+.social-links .boxxxx:hover,
+.social-links .boxxxxx:hover,
+.social-links .boxxxxxx:hover,
+.social-links .boxxxxxxx:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Darker shadow effect on hover */
+    background: linear-gradient(145deg, #f0f8ff, #87ceeb); /* Light blue gradient on hover */
+}
+
+/* Social Links Text */
+.social-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff; /* White text for better contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    background-color: #000000; /* Black background for footer */
+    padding: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* Add fade-in animation to social links */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.social-links .box,
+.social-links .boxx,
+.social-links .boxxx,
+.social-links .boxxxx,
+.social-links .boxxxxx,
+.social-links .boxxxxxx,
+.social-links .boxxxxxxx {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Add animations for scroll-to-top button */
+#scrollTopButton {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scrollTopButton:hover {
+    transform: scale(1.2);
+}
